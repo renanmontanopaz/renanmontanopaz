@@ -55,7 +55,7 @@ spec:
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  namespace: gmp-test
+  namespace: monitoring
   name: prometheus-test
   annotations:
     # The emptyDir for the storage and config directories prevents cluster
@@ -169,7 +169,7 @@ spec:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  namespace: gmp-test
+  namespace: monitoring
   name: prometheus-test
   labels:
     prometheus: test
